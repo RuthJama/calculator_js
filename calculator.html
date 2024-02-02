@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calc_style.css">
+    <script src="./calculator.js"></script>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="calculator">
+        <input type="text" id="calc_result" readonly value="0" />
+        <br>
+        <div class="buttons">
+        <button class = "reset" onclick="clearResult()">AC</button>
+        <button class="darkBlue" onclick="toggleSign()">+/-</button>
+        <button class="darkBlue" onclick="appendToDisplay('%')">%</button>
+        <button class="darkBlue" onclick="appendToDisplay('/')">÷</button>
+
+
+        <button class="orange" onclick="appendToDisplay('7')">7</button>
+        <button class="orange" onclick="appendToDisplay('8')">8</button>
+        <button class="orange" onclick="appendToDisplay('9')">9</button>
+        <button class="darkBlue" onclick="appendToDisplay('*')">×</button>
+
+        <button class="orange" onclick="appendToDisplay('4')">4</button>
+        <button class="orange" onclick="appendToDisplay('5')">5</button>
+        <button class="orange" onclick="appendToDisplay('6')">6</button>
+        <button class="darkBlue" onclick="appendToDisplay('-')">-</button>
+
+        <button class="orange" onclick="appendToDisplay('1')">1</button>
+        <button class="orange" onclick="appendToDisplay('2')">2</button>
+        <button class="orange" onclick="appendToDisplay('3')">3</button>
+        <button class="darkBlue" onclick="appendToDisplay('+')">+</button>
+
+        <button class="orange" onclick="appendToDisplay('0')">0</button>
+        <button class="orange" onclick="appendToDisplay('.')">.</button>
+        <button class="orange" onclick="appendToDisplay()">&#9003;</button>
+        <button class="equal" onclick="calculateResult()">=</button>
+        <br>
+        </div>
+        
+    </div>
+</body>
+</html>
