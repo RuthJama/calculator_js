@@ -28,7 +28,7 @@ function calculateResult() {
         calculateDisplay = calculateDisplay.replace(/%/g, '/100');
 
         let result = eval(calculateDisplay);
-        document.getElementById('calc_result').value = result;
+        document.getElementById('calc_result').value = result
     } catch (error) {
         console.error('Error evaluating expression:', error);
         document.getElementById('calc_result').value = 'Error';
