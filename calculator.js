@@ -1,3 +1,8 @@
+function toggleTheme() {
+    const calculator = document.querySelector('.calculator');
+    calculator.classList.toggle('dark');
+}
+
 function appendToDisplay(value) {
     let currentValue = document.getElementById('calc_result').value;
 
